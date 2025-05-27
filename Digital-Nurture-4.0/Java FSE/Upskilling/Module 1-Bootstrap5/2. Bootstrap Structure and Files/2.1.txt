@@ -1,0 +1,8 @@
+1. css/ folder:
+This folder contains all the styles that control how your webpage looks. The main file here is bootstrap.min.css, which is a compressed version used for faster loading. It styles buttons, layouts, text, and everything else on the page using Bootstrap’s design system.
+
+2. js/ folder:
+This folder includes JavaScript files that make your website interactive. For example, it powers things like dropdown menus, tooltips, modals, and carousels. The best file to use is bootstrap.bundle.min.js because it includes both Bootstrap's features and another tool called Popper.js, which is required for some effects.
+
+3. icons/ folder:
+If you download Bootstrap Icons, you’ll get this folder. It provides small images like arrows, hearts, or trash icons you can place on your site. The bootstrap-icons.css file tells your HTML how to use these icons, and the fonts/ folder holds the actual icon graphics.

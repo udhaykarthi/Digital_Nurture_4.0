@@ -1,0 +1,4 @@
+@use "../node_modules/bootstrap/scss/bootstrap" with (
+  $primary: #ff5722,
+  $border-radius: 1rem
+);
