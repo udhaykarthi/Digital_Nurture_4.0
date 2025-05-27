@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #message {
+      margin-top: 10px;
+      font-weight: bold;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Event Promo Video</h2>
+
+<video id="promoVideo" width="480" controls oncanplay="videoReady()">
+  <source src="./sample.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<p id="message"></p>
+
+<form id="registrationForm">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="Your name" required><br><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+
+<script>
+  function videoReady() {
+    document.getElementById('message').textContent = "Video ready to play";
+  }
+
+  window.onbeforeunload = function(event) {
+    const form = document.getElementById('registrationForm');
+    if (form.name.value !== "" || form.email.value !== "") {
+      event.preventDefault();
+      event.returnValue = "You have unsaved changes. Are you sure you want to leave?";
+      return event.returnValue;
+    }
+  };
+</script>
+
+</body>
+</html>
