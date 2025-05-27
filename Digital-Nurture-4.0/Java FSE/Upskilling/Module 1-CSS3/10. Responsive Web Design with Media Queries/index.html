@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      font-size: 18px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: darkblue;
+      font-weight: bold;
+    }
+
+    img {
+      width: 50vw;
+      max-width: 400px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+        width: 80vw;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <img src="image.jpg" alt="Sample Image">
+
+  <p>Responsive text and image resizing with stacked navigation on small screens.</p>
+
+</body>
+</html>
